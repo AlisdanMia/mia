@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body { 
+  font-family: Arial;
+  padding: 0px;
+  background-color:rgb(116, 8, 8) ;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  text-align: center;
+  background: rgb(255, 255, 255);
+  font-size:30px
+}
+
+.header h1 {
+  font-size: 50px;
+}
+
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #1b8012;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #51ff06;
+  color: black;
+}
+a.dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+   a:hover, .dropdown:hover .dropbtn {
+    background-color:  rgb(0, 255, 204);
+  }
+  
+  .dropdown {
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #5afe65;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {
+    background-color:#0f8b21;}
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  background-color:rgb(116, 8, 8);
+  padding-left: 20px;
+}
+
+
+/* Fake image */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+/* Add a card effect for articles */
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+
+/* Clear floats after the columns */
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+/* Footer */
+.footer {
+  padding: 10px;
+  text-align: center;
+  background: #1b8012;
+  margin-top: 10px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <a href="home.html"><img src="images/logoispsc.png"width="1000" height="100"></a>
+  
+</div>
+
+<div class="topnav">
+  <a href="home.html">Home</a>
+  <div class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Profile</a>
+    <div class="dropdown-content">
+      <a href="picture.html">Picture</a>
+      <a href="videos.html">Videos</a>
+    </div>
+    </div>
+  <a href="about.html">About</a>
+  
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2>About Me</h2>
+      <h5>Mia Anzella Alisdan</h5>
+
+      <img src="images/mia.jpg" width="200" height="200">
+      <p>Basic Information.</p>
+      <p><p>I'm Mia Anzella Alisdan, a 3rd year college student taking Bachelor
+        of Science in Information Technology at Ilocos Sur Polytechnic State College Sta. Maria Campus.</p>
+    <p>I'm the youngest daughter of Mr. William Alisdan and Mrs. Reynalda Alisdan. 
+       I attained my kindergarten years at Dirdirig Day Care Center and 
+     I took my elementary years at Padayao Elementary School and graduated with honors. I finished my Junior and Senior High School years at 
+    Burgos National High School.</p>
+
+     
+    </div>
+    <div class="card">
+      <h2>My Contact Details</h2>
+     
+        <p>Address: Dirdirig, Burgos, Ilocos Sur</p>
+        <p>Phone Number: 09203453131</p>
+       <p>G-mail: alisdanmiaanzella@gmail.com</p>
+    </div>
+  </div>
+  <div class="rightcolumn">
+   
+    <div class="card">
+      <h3>News</h3>
+      <p>CCS Teacher's Day Celebration</p>
+      <img src="images/ccstd.jpg" width="150" height="100">
+   <br>
+      <p>ISPSC Teacher's Day Celebration</p>
+      <img src="images/ispsctd.jpg" width="150" height="100">
+      <br>
+      <p>CSS Volleyball Tryout </p>
+      <img src="images/vb.jpg" width="150" height="100">
+    </div>
+    <div class="card">
+      <a href="https://ispsc.edu.ph/campuses/santa-maria-campus/"><img src="ispsclogo.png" width="50" height="50"></a>
+      <br>
+      <a href="https://www.facebook.com/CCSISPSCOfficial?mibextid=LQQJ4d"><img src="ccs.jpg" width="50" height="50"></a>
+    
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  <h2>@2023 All Rights Reserved.</h2>
+</div>
+
+</body>
+</html>
+
+
